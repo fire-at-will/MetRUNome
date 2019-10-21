@@ -1,0 +1,576 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FDA30BC6235D56CD00DFD293 /* MetRUNome WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = FDA30BC5235D56CD00DFD293 /* MetRUNome WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		FDA30BCC235D56CD00DFD293 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDA30BCA235D56CD00DFD293 /* Interface.storyboard */; };
+		FDA30BCE235D56D200DFD293 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDA30BCD235D56D200DFD293 /* Assets.xcassets */; };
+		FDA30BD5235D56D200DFD293 /* MetRUNome WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = FDA30BD4235D56D200DFD293 /* MetRUNome WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		FDA30BDA235D56D200DFD293 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA30BD9235D56D200DFD293 /* ContentView.swift */; };
+		FDA30BDC235D56D200DFD293 /* HostingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA30BDB235D56D200DFD293 /* HostingController.swift */; };
+		FDA30BDE235D56D200DFD293 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA30BDD235D56D200DFD293 /* ExtensionDelegate.swift */; };
+		FDA30BE0235D56D200DFD293 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA30BDF235D56D200DFD293 /* NotificationController.swift */; };
+		FDA30BE2235D56D200DFD293 /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA30BE1235D56D200DFD293 /* NotificationView.swift */; };
+		FDA30BE4235D56D500DFD293 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDA30BE3235D56D500DFD293 /* Assets.xcassets */; };
+		FDA30BE7235D56D500DFD293 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDA30BE6235D56D500DFD293 /* Preview Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FDA30BC7235D56CD00DFD293 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FDA30BBB235D56CD00DFD293 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FDA30BC4235D56CD00DFD293;
+			remoteInfo = "MetRUNome WatchKit App";
+		};
+		FDA30BD6235D56D200DFD293 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FDA30BBB235D56CD00DFD293 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FDA30BD3235D56D200DFD293;
+			remoteInfo = "MetRUNome WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		FDA30BEF235D56D500DFD293 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				FDA30BD5235D56D200DFD293 /* MetRUNome WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FDA30BF3235D56D500DFD293 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				FDA30BC6235D56CD00DFD293 /* MetRUNome WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		FDA30BC1235D56CD00DFD293 /* MetRUNome.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MetRUNome.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FDA30BC5235D56CD00DFD293 /* MetRUNome WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MetRUNome WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FDA30BCB235D56CD00DFD293 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		FDA30BCD235D56D200DFD293 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FDA30BCF235D56D200DFD293 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FDA30BD4235D56D200DFD293 /* MetRUNome WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "MetRUNome WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FDA30BD9235D56D200DFD293 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		FDA30BDB235D56D200DFD293 /* HostingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostingController.swift; sourceTree = "<group>"; };
+		FDA30BDD235D56D200DFD293 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		FDA30BDF235D56D200DFD293 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		FDA30BE1235D56D200DFD293 /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
+		FDA30BE3235D56D500DFD293 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FDA30BE6235D56D500DFD293 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FDA30BE8235D56D500DFD293 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FDA30BE9235D56D500DFD293 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FDA30BD1235D56D200DFD293 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FDA30BBA235D56CD00DFD293 = {
+			isa = PBXGroup;
+			children = (
+				FDA30BC9235D56CD00DFD293 /* MetRUNome WatchKit App */,
+				FDA30BD8235D56D200DFD293 /* MetRUNome WatchKit Extension */,
+				FDA30BC2235D56CD00DFD293 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FDA30BC2235D56CD00DFD293 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FDA30BC1235D56CD00DFD293 /* MetRUNome.app */,
+				FDA30BC5235D56CD00DFD293 /* MetRUNome WatchKit App.app */,
+				FDA30BD4235D56D200DFD293 /* MetRUNome WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FDA30BC9235D56CD00DFD293 /* MetRUNome WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				FDA30BCA235D56CD00DFD293 /* Interface.storyboard */,
+				FDA30BCD235D56D200DFD293 /* Assets.xcassets */,
+				FDA30BCF235D56D200DFD293 /* Info.plist */,
+			);
+			path = "MetRUNome WatchKit App";
+			sourceTree = "<group>";
+		};
+		FDA30BD8235D56D200DFD293 /* MetRUNome WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				FDA30BD9235D56D200DFD293 /* ContentView.swift */,
+				FDA30BDB235D56D200DFD293 /* HostingController.swift */,
+				FDA30BDD235D56D200DFD293 /* ExtensionDelegate.swift */,
+				FDA30BDF235D56D200DFD293 /* NotificationController.swift */,
+				FDA30BE1235D56D200DFD293 /* NotificationView.swift */,
+				FDA30BE3235D56D500DFD293 /* Assets.xcassets */,
+				FDA30BE8235D56D500DFD293 /* Info.plist */,
+				FDA30BE9235D56D500DFD293 /* PushNotificationPayload.apns */,
+				FDA30BE5235D56D500DFD293 /* Preview Content */,
+			);
+			path = "MetRUNome WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		FDA30BE5235D56D500DFD293 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				FDA30BE6235D56D500DFD293 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FDA30BC0235D56CD00DFD293 /* MetRUNome */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FDA30BF4235D56D500DFD293 /* Build configuration list for PBXNativeTarget "MetRUNome" */;
+			buildPhases = (
+				FDA30BBF235D56CD00DFD293 /* Resources */,
+				FDA30BF3235D56D500DFD293 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FDA30BC8235D56CD00DFD293 /* PBXTargetDependency */,
+			);
+			name = MetRUNome;
+			productName = MetRUNome;
+			productReference = FDA30BC1235D56CD00DFD293 /* MetRUNome.app */;
+			productType = "com.apple.product-type.application.watchapp2-container";
+		};
+		FDA30BC4235D56CD00DFD293 /* MetRUNome WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FDA30BF0235D56D500DFD293 /* Build configuration list for PBXNativeTarget "MetRUNome WatchKit App" */;
+			buildPhases = (
+				FDA30BC3235D56CD00DFD293 /* Resources */,
+				FDA30BEF235D56D500DFD293 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FDA30BD7235D56D200DFD293 /* PBXTargetDependency */,
+			);
+			name = "MetRUNome WatchKit App";
+			productName = "MetRUNome WatchKit App";
+			productReference = FDA30BC5235D56CD00DFD293 /* MetRUNome WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		FDA30BD3235D56D200DFD293 /* MetRUNome WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FDA30BEC235D56D500DFD293 /* Build configuration list for PBXNativeTarget "MetRUNome WatchKit Extension" */;
+			buildPhases = (
+				FDA30BD0235D56D200DFD293 /* Sources */,
+				FDA30BD1235D56D200DFD293 /* Frameworks */,
+				FDA30BD2235D56D200DFD293 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "MetRUNome WatchKit Extension";
+			productName = "MetRUNome WatchKit Extension";
+			productReference = FDA30BD4235D56D200DFD293 /* MetRUNome WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FDA30BBB235D56CD00DFD293 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+				ORGANIZATIONNAME = "Will Taylor";
+				TargetAttributes = {
+					FDA30BC0235D56CD00DFD293 = {
+						CreatedOnToolsVersion = 11.0;
+					};
+					FDA30BC4235D56CD00DFD293 = {
+						CreatedOnToolsVersion = 11.0;
+					};
+					FDA30BD3235D56D200DFD293 = {
+						CreatedOnToolsVersion = 11.0;
+					};
+				};
+			};
+			buildConfigurationList = FDA30BBE235D56CD00DFD293 /* Build configuration list for PBXProject "MetRUNome" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FDA30BBA235D56CD00DFD293;
+			productRefGroup = FDA30BC2235D56CD00DFD293 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FDA30BC0235D56CD00DFD293 /* MetRUNome */,
+				FDA30BC4235D56CD00DFD293 /* MetRUNome WatchKit App */,
+				FDA30BD3235D56D200DFD293 /* MetRUNome WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FDA30BBF235D56CD00DFD293 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FDA30BC3235D56CD00DFD293 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FDA30BCE235D56D200DFD293 /* Assets.xcassets in Resources */,
+				FDA30BCC235D56CD00DFD293 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FDA30BD2235D56D200DFD293 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FDA30BE7235D56D500DFD293 /* Preview Assets.xcassets in Resources */,
+				FDA30BE4235D56D500DFD293 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FDA30BD0235D56D200DFD293 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FDA30BDC235D56D200DFD293 /* HostingController.swift in Sources */,
+				FDA30BDA235D56D200DFD293 /* ContentView.swift in Sources */,
+				FDA30BE0235D56D200DFD293 /* NotificationController.swift in Sources */,
+				FDA30BDE235D56D200DFD293 /* ExtensionDelegate.swift in Sources */,
+				FDA30BE2235D56D200DFD293 /* NotificationView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FDA30BC8235D56CD00DFD293 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FDA30BC4235D56CD00DFD293 /* MetRUNome WatchKit App */;
+			targetProxy = FDA30BC7235D56CD00DFD293 /* PBXContainerItemProxy */;
+		};
+		FDA30BD7235D56D200DFD293 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FDA30BD3235D56D200DFD293 /* MetRUNome WatchKit Extension */;
+			targetProxy = FDA30BD6235D56D200DFD293 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FDA30BCA235D56CD00DFD293 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FDA30BCB235D56CD00DFD293 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FDA30BEA235D56D500DFD293 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FDA30BEB235D56D500DFD293 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FDA30BED235D56D500DFD293 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"MetRUNome WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = 6SU2UC766Q;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "MetRUNome WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.fireatwill.MetRUNome.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
+			};
+			name = Debug;
+		};
+		FDA30BEE235D56D500DFD293 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"MetRUNome WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = 6SU2UC766Q;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "MetRUNome WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.fireatwill.MetRUNome.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
+			};
+			name = Release;
+		};
+		FDA30BF1235D56D500DFD293 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6SU2UC766Q;
+				IBSC_MODULE = MetRUNome_WatchKit_Extension;
+				INFOPLIST_FILE = "MetRUNome WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.fireatwill.MetRUNome.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
+			};
+			name = Debug;
+		};
+		FDA30BF2235D56D500DFD293 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6SU2UC766Q;
+				IBSC_MODULE = MetRUNome_WatchKit_Extension;
+				INFOPLIST_FILE = "MetRUNome WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.fireatwill.MetRUNome.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
+			};
+			name = Release;
+		};
+		FDA30BF5235D56D500DFD293 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6SU2UC766Q;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fireatwill.MetRUNome;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		FDA30BF6235D56D500DFD293 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6SU2UC766Q;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fireatwill.MetRUNome;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FDA30BBE235D56CD00DFD293 /* Build configuration list for PBXProject "MetRUNome" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FDA30BEA235D56D500DFD293 /* Debug */,
+				FDA30BEB235D56D500DFD293 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FDA30BEC235D56D500DFD293 /* Build configuration list for PBXNativeTarget "MetRUNome WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FDA30BED235D56D500DFD293 /* Debug */,
+				FDA30BEE235D56D500DFD293 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FDA30BF0235D56D500DFD293 /* Build configuration list for PBXNativeTarget "MetRUNome WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FDA30BF1235D56D500DFD293 /* Debug */,
+				FDA30BF2235D56D500DFD293 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FDA30BF4235D56D500DFD293 /* Build configuration list for PBXNativeTarget "MetRUNome" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FDA30BF5235D56D500DFD293 /* Debug */,
+				FDA30BF6235D56D500DFD293 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FDA30BBB235D56CD00DFD293 /* Project object */;
+}
