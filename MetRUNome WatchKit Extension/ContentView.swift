@@ -9,8 +9,38 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State var minutes: Int = 9
+    @State var seconds: Int = 0
+
     var body: some View {
-        Text("Hello World")
+
+        VStack {
+            HStack {
+                Text("Pace").font(.body)
+                Spacer()
+            }
+            Spacer()
+            
+            HStack {
+                Text(paddedIntString(minutes)).font(.largeTitle)
+                Text(":").font(.largeTitle)
+                Text(paddedIntString(seconds)).font(.largeTitle)
+            }.padding()
+            
+            Spacer()
+            
+            Button(action: {print("Start!")}) {
+            Text("Start!")
+            }
+        }
+    }
+    
+    private func paddedIntString(_ int: Int) -> String {
+        if int < 10 {
+            return "0\(int)"
+        } else {
+            return "\(int)"
+        }
     }
 }
 
