@@ -9,28 +9,48 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State var scrollAmount = 570.0
+    
     @State var minutes: Int = 9
     @State var seconds: Int = 0
-
+    
     var body: some View {
-
+        
         VStack {
             HStack {
-                Text("Pace").font(.body)
+                Text("Pace").font(.subheadline)
                 Spacer()
             }
             Spacer()
             
             HStack {
-                Text(paddedIntString(minutes)).font(.largeTitle)
+                Text(paddedIntString(Int(scrollAmount / 60))).font(.largeTitle)
                 Text(":").font(.largeTitle)
-                Text(paddedIntString(seconds)).font(.largeTitle)
+                Text(
+                    paddedIntString(
+                        Int(scrollAmount.truncatingRemainder(dividingBy: 60))
+                    )
+                )
+                    .font(.largeTitle)
+                    .focusable(true)
+                    .digitalCrownRotation(
+                        $scrollAmount,
+                        from: 0.0,
+                        through: 7200.0,
+                        by: 0.5,
+                        sensitivity: .low,
+                        isContinuous: false,
+                        isHapticFeedbackEnabled: true
+                )
+                
             }.padding()
             
             Spacer()
             
-            Button(action: {print("Start!")}) {
-            Text("Start!")
+            Button(action: {
+                
+            }) {
+                Text("Start!")
             }
         }
     }
