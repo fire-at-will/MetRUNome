@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FD1BEF0D2382F7EE0091E9CF /* PaceSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1BEF0C2382F7EE0091E9CF /* PaceSelectionView.swift */; };
+		FD1BEF0F2382F88F0091E9CF /* RunningView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1BEF0E2382F88F0091E9CF /* RunningView.swift */; };
+		FD1BEF122383024D0091E9CF /* RunningEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1BEF112383024D0091E9CF /* RunningEngine.swift */; };
+		FD1BEF15238349050091E9CF /* Pace.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1BEF14238349050091E9CF /* Pace.swift */; };
 		FDA30BC6235D56CD00DFD293 /* MetRUNome WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = FDA30BC5235D56CD00DFD293 /* MetRUNome WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		FDA30BCC235D56CD00DFD293 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDA30BCA235D56CD00DFD293 /* Interface.storyboard */; };
 		FDA30BCE235D56D200DFD293 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDA30BCD235D56D200DFD293 /* Assets.xcassets */; };
@@ -63,6 +67,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		FD1BEF0C2382F7EE0091E9CF /* PaceSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaceSelectionView.swift; sourceTree = "<group>"; };
+		FD1BEF0E2382F88F0091E9CF /* RunningView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunningView.swift; sourceTree = "<group>"; };
+		FD1BEF112383024D0091E9CF /* RunningEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunningEngine.swift; sourceTree = "<group>"; };
+		FD1BEF14238349050091E9CF /* Pace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pace.swift; sourceTree = "<group>"; };
 		FDA30BC1235D56CD00DFD293 /* MetRUNome.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MetRUNome.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDA30BC5235D56CD00DFD293 /* MetRUNome WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MetRUNome WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDA30BCB235D56CD00DFD293 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
@@ -91,6 +99,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FD1BEF0B2382F7DE0091E9CF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FD1BEF0C2382F7EE0091E9CF /* PaceSelectionView.swift */,
+				FD1BEF0E2382F88F0091E9CF /* RunningView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		FD1BEF10238302430091E9CF /* Engines */ = {
+			isa = PBXGroup;
+			children = (
+				FD1BEF112383024D0091E9CF /* RunningEngine.swift */,
+			);
+			path = Engines;
+			sourceTree = "<group>";
+		};
+		FD1BEF13238348FE0091E9CF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FD1BEF14238349050091E9CF /* Pace.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		FDA30BBA235D56CD00DFD293 = {
 			isa = PBXGroup;
 			children = (
@@ -123,6 +156,9 @@
 		FDA30BD8235D56D200DFD293 /* MetRUNome WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
+				FD1BEF13238348FE0091E9CF /* Models */,
+				FD1BEF10238302430091E9CF /* Engines */,
+				FD1BEF0B2382F7DE0091E9CF /* Views */,
 				FDA30BD9235D56D200DFD293 /* ContentView.swift */,
 				FDA30BDB235D56D200DFD293 /* HostingController.swift */,
 				FDA30BDD235D56D200DFD293 /* ExtensionDelegate.swift */,
@@ -276,6 +312,10 @@
 				FDA30BDA235D56D200DFD293 /* ContentView.swift in Sources */,
 				FDA30BE0235D56D200DFD293 /* NotificationController.swift in Sources */,
 				FDA30BDE235D56D200DFD293 /* ExtensionDelegate.swift in Sources */,
+				FD1BEF0D2382F7EE0091E9CF /* PaceSelectionView.swift in Sources */,
+				FD1BEF15238349050091E9CF /* Pace.swift in Sources */,
+				FD1BEF122383024D0091E9CF /* RunningEngine.swift in Sources */,
+				FD1BEF0F2382F88F0091E9CF /* RunningView.swift in Sources */,
 				FDA30BE2235D56D200DFD293 /* NotificationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
